@@ -34,3 +34,11 @@ First 7 are _primitive data types_ <br>
 5. Remainder: % aka modulo
 
 string concatenation: + <br>
+. dot operator <br>
+methods <br>
+instances <br>
+argument <br>
+```
+instance.methodName();
+```
+built-in objects <br>

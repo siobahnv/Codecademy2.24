@@ -1,6 +1,6 @@
 # Codecademy Coursework
 
-## Learn JavaScript
+## Learn JavaScript / Introduction to JavaScript
 console <br>
 print / log <br>
 "In JavaScript, the _console_ keyword refers to an object, a collection of data and actions, that we can use in our code." <br>
@@ -42,3 +42,12 @@ argument <br>
 instance.methodName();
 ```
 built-in objects <br>
+property <br>
+
+### Resources
+https://www.codecademy.com/resources/docs/javascript <br>
+https://www.codecademy.com/workspaces/new (select JavaScript) <br>
+https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-introduction/cheatsheet <br>
+
+## Variables <br>
+"a _variable_ is a container for a value." <br>

@@ -51,3 +51,16 @@ https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javasc
 
 ## Variables <br>
 "a _variable_ is a container for a value." <br>
+Prior-ES6: _var_ <br>
+Post-ES6-2015: _let_ and _const_ to create/declare variables <br>
+_camel casing_ <br>
+= _assignment operator_ <br>
+value <br>
+
+General naming rules: <br>
+1. Cannot start with a numeral
+2. Case-sensite (myVar != myvar) 
+3. != keywords 
+
+_let_ and _variable_ can be reassigned different values and even created without a value, in that case the variable will be initilized with a value of "undefined" <br>
+_const_, short for constant, cannnot be reassigned, will get a _TypeError_; will get a _SyntaxError_ if declared without a value <br>

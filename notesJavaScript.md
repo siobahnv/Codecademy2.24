@@ -81,3 +81,12 @@ a template literal is wrapped by backticks ` <br>
 a placeholder, ${myVar}, is used to interpolate <br>
 
 _typeof operator_ can be used to check the data type of a variable's value <br>
+
+## A Bit of History
+JavaScript vs ECMAScript <br>
+One can use JavaScript to create an app or program. <br>
+One can use the guidelines of ECMAScript to create a new scripting language. <br>
+ES6 or JavaScript ES6 or ES2015: refer to the sixth edition of ECMAScript released in 2015. <br>
+ES6 is one of the biggest releases and is sometimes referred to as "Modern JavaScript" by developers. <br>
+
+## Conditionals

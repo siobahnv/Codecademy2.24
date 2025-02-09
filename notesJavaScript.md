@@ -59,8 +59,25 @@ value <br>
 
 General naming rules: <br>
 1. Cannot start with a numeral
-2. Case-sensite (myVar != myvar) 
+2. Case-sensitive (myVar != myvar) 
 3. != keywords 
 
 _let_ and _variable_ can be reassigned different values and even created without a value, in that case the variable will be initilized with a value of "undefined" <br>
 _const_, short for constant, cannnot be reassigned, will get a _TypeError_; will get a _SyntaxError_ if declared without a value <br>
+
+### Operators
+_mathematical assignment operators_ +=, -=, *=, /=<br>
+_increment operator_ ++ <br>
+_decrement operator_ -- <br>
+
+_string concatenation_ + <br>
+string interpolation and _template literals_ <br>
+```
+const myVar = 'example';
+console.log(`Interpolating in a string literal ${myVar}.`);
+// Output: Interpolating in a string literal example.
+```
+a template literal is wrapped by backticks ` <br>
+a placeholder, ${myVar}, is used to interpolate <br>
+
+_typeof operator_ can be used to check the data type of a variable's value <br>

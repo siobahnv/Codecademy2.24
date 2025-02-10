@@ -90,3 +90,88 @@ ES6 or JavaScript ES6 or ES2015: refer to the sixth edition of ECMAScript releas
 ES6 is one of the biggest releases and is sometimes referred to as "Modern JavaScript" by developers. <br>
 
 ## Conditionals
+"A conditional statement checks a specific condition(s) and performs a task based on the condition(s)." <br>
+
+### If and If...Else and Else If Statements
+```
+if (true) {
+  console.log('This message will print!'); 
+}
+// Prints: This message will print!
+
+if (false) {
+  console.log('The code in this block will not run.');
+} else {
+  console.log('But the code in this block will!');
+}
+
+// Prints: But the code in this block will!
+
+let stopLight = 'yellow';
+
+if (stopLight === 'red') {
+  console.log('Stop!');
+} else if (stopLight === 'yellow') {
+  console.log('Slow down.');
+} else if (stopLight === 'green') {
+  console.log('Go!');
+} else {
+  console.log('Caution, unknown!');
+}
+```
+_code block_, aka _block statement_, indicated by a set of curly braces {} <br>
+_binary decisions_, yes-no <br>
+Read from top to bottom, first condition evaluates to true executes. <br>
+
+### Comparison Operators
+Such as: <, >, <=, >=, ===, !== <br>
+_identity operator_ === <br>
+
+### Logical Operators
+_and_ operator && <br>
+_or_ operator || <br>
+_not_ operator, aka _bang_ operator, !; reverses or negates the value <br>
+
+### Truthy and Falsy
+Falsy values include:
+* 0
+* Empty strings, "" or ''
+* null
+* undefined
+* NaN (Not a Number)
+_short-circuit evaluation_ <br>
+
+### Ternary Operator
+```
+// if-else statement
+let isNightTime = true;
+
+if (isNightTime) {
+  console.log('Turn on the lights!');
+} else {
+  console.log('Turn off the lights!');
+}
+
+// ternary operator statement
+isNightTime ? console.log('Turn on the lights!') : console.log('Turn off the lights!');
+```
+
+### The switch keyword
+```
+let myVar = myValue;
+
+switch (myVar) {
+    case myValue0:
+        code;
+        break;
+    case myValue1:
+        code;
+        break;
+    case myValue2:
+        code;
+        break;
+    default:
+        code;
+        break;
+}
+```

@@ -239,3 +239,13 @@ const functionName = param => {
 };
 ```
 _implicit return_, the keyword _return_ can be omitted. <br>
+
+## Scope
+"Scope defines where variables can be accessed or referenced." <br>
+"Blocks help us group one or more statements together..." <br>
+"In _global scope_, variables are declared outside of blocks." <br>
+"We say that variable has _block scope_ because it is _only_ accessible to the lines of code within that block." <br>
+"Variables that are declared with _block scope_ are known as _local variables_..." <br>
+_global namespace_ <br>
+_scope pollution_ <br>
+"it’s best practice to not define variables in the global scope." <br>

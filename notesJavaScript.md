@@ -175,3 +175,67 @@ switch (myVar) {
         break;
 }
 ```
+"Note: Without break keywords, the first matching case will run, but so will every subsequent case regardless of whether or not it matches—including the default." <br>
+
+## Functions
+"A function is a reusable block of code that groups together a sequence of statements to perform a specific task." <br>
+_function declaration_, binds a function to a name, _identifier_ <br>
+```
+function identifier() {
+    code;
+}
+
+function identifier(parameters=default) {
+    code;
+}
+
+identifier(arguments);
+```
+_hoisting_ feature; can call a function before definted; not good practice <br>
+A function _executes_ when it is _called_, _function call_. <br>
+_parameters_ are placeholders that allow passing input(s) <br>
+Values that are passed to a function as input(s) are called _arguments_. <br>
+_default parameters_ can set a predetermined value if there is no argument or the argument is _undefined_ <br>
+By default, the resulting value of a function is _undefined_. <br>
+_return statement_ <br>
+"When a return statement is used in a function body, the execution of the function is stopped and the code that follows it will not be executed." <br>
+
+_helper functions_ <br>
+_function expression_ <br>
+"A function with no name is called an anonymous function." <br>
+```
+const identifierVar = function(parameters) {
+    code;
+};
+```
+"Unlike function declarations, function expressions are not hoisted so they cannot be called before they are defined." <br>
+
+_arrow function syntax_, "fat arrow" () => notation <br>
+```
+const identifierVar = (parameters) => {
+    code;
+};
+```
+Many ways to refactor _arrow function syntax_. <br>
+The most condensed form of _arrow function syntax_ is _concise body_. <br>
+```
+// ZERO PARAMETERS
+const functionName = () => {};
+
+// ONE PARAMETER
+const functionName = param1 => {};
+
+// MULTIPLE PARAMETERS
+const functionName = (param1, param2) => {};
+
+// SINGLE-LINE BLOCK
+// implicit return
+const functionName = param => code;
+
+// MULTI-LINE BLOCK
+const functionName = param => {
+    code;
+    return (optional_value);
+};
+```
+_implicit return_, the keyword _return_ can be omitted. <br>

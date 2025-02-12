@@ -249,3 +249,32 @@ _implicit return_, the keyword _return_ can be omitted. <br>
 _global namespace_ <br>
 _scope pollution_ <br>
 "it’s best practice to not define variables in the global scope." <br>
+
+## Arrays
+_Arrays_ can store an _ordered_ list of any data types. <br>
+_array literal_ <br>
+_element_ <br>
+```
+[element0, element1, elementEtc]
+```
+_index_ <br>
+_zero-indexed_, start counting from 0 <br>
+_bracket notation_ <br>
+```
+// Named Array
+let myArray = ['Index 0', 'Index 1', 'Index 2'];
+
+// Acess element of array
+myArray[index]
+```
+"Individual elements in arrays can also be stored to variables." <br>
+"However, elements in an array declared with _const_ remain _mutable_. Meaning that we can change the contents of a _const_ array, but cannot reassign a new array or a different value." <br>
+"One of an array’s built-in properties is _length_ and it returns the number of items in the array." <br>
+_.length_ <br>
+_dot notation_ <br>
+_.push()_ , add items to the end of an array <br>
+_mutates_ <br>
+_destructive_ array method <br>
+_.pop()_, removes the last item of an array; returns the value of the last element; mutates the array <br>
+_non-mutating_ <br>
+Read about more array methods: https://www.codecademy.com/resources/docs/javascript/arrays <br>

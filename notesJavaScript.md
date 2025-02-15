@@ -278,3 +278,12 @@ _destructive_ array method <br>
 _.pop()_, removes the last item of an array; returns the value of the last element; mutates the array <br>
 _non-mutating_ <br>
 Read about more array methods: https://www.codecademy.com/resources/docs/javascript/arrays <br>
+
+_pass-by-reference_ <br>
+_nested array_ <br>
+_chain_ indices using bracket notation <br>
+```
+const exampleNestedArr = [[1], [2, 3]];
+// Output: 2
+console.log(exampleNestedArr[1][0]);
+```

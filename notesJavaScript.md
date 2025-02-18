@@ -287,3 +287,19 @@ const exampleNestedArr = [[1], [2, 3]];
 // Output: 2
 console.log(exampleNestedArr[1][0]);
 ```
+
+## Loops
+"A _loop_ is a programming tool that repeats a set of instructions until a specified condition, called a _stopping condition_ is reached." <br>
+_iterate_, "to repeat" <br>
+_for loop_ <br>
+_iterator variable_ <br>
+"A _for_ loop contains three expressions separated by ; inside the parentheses..." <br>
+_initialization_ <br>
+_stopping condition_ <br>
+_iteration statement_ <br>
+```
+for (initialization; stopping condition; iteration statement) {
+    code;
+}
+```
+_infinite loop_ <br>

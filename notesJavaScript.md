@@ -303,3 +303,29 @@ for (initialization; stopping condition; iteration statement) {
 }
 ```
 _infinite loop_ <br>
+_i_ is a naming convention, often short-hand for _index_ <br>
+_nested loop_ <br>
+
+_while loop_ <br>
+_test condition_, _stopping condition_ for a _while_ loop <br>
+"The syntax of a _while_ loop is ideal when we don’t know in advance how many times the loop should run." <br>
+```
+initialization;
+while(test condition) {
+    code;
+    iteration statement;
+}
+```
+
+_do...while loop_ <br>
+"A _do...while_ statement says to do a task once and then keep doing it until a specified condition is no longer met." <br>
+```
+initialization;
+do {
+    code;
+    iteration statement;
+} while (stopping condition);
+```
+
+_break_ keyword <br>
+Can use breaks to add test condition other than the stopping condition. <br>

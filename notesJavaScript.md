@@ -5,7 +5,9 @@ console <br>
 print / log <br>
 "In JavaScript, the _console_ keyword refers to an object, a collection of data and actions, that we can use in our code." <br>
 action / method <br>
-- console.log() <br>
+``` 
+console.log() 
+```
 comments <br>
 _single line comment //_ <br>
 can be placed after / at end of line of code <br>
@@ -347,3 +349,14 @@ shortName();
 "In JavaScript, functions are _first class objects_. This means that, like other _objects_ you’ve encountered, JavaScript functions can have properties and methods." <br>
 "A _higher-order function_ is a function that either accepts functions as parameters, returns a function, or both." <br>
 _callback functions_, functions that get passed as parameters <br>
+
+## Iterators
+_iteration methods_ aka _iterators_ are built-in JavaScript array methods that manipulate elements and return values <br>
+
+_.forEach() method_, returns _undefined_ <br>
+_.map() method_, returns an array <br>
+_.filter() method_, returns an array <br>
+_.findIndex() method_, return _index_ of _first_ element that evaluates to true, otherwise returns -1 <br>
+_.reduce() method_, returns a single value <br>
+
+For more built-in array methods: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Iteration_methods <br>

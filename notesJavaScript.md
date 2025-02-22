@@ -329,3 +329,21 @@ do {
 
 _break_ keyword <br>
 Can use breaks to add test condition other than the stopping condition. <br>
+
+## High-Order Functions
+_abstraction_ by writing functions <br>
+_higher-order functions_ <br>
+_reference_ <br>
+```
+// Passing functions to functions
+function reallySignificantlyLongNametoName() => {
+    code;
+}
+
+const shortName = reallySignificantlyLongNametoName;
+shortName();
+```
+
+"In JavaScript, functions are _first class objects_. This means that, like other _objects_ you’ve encountered, JavaScript functions can have properties and methods." <br>
+"A _higher-order function_ is a function that either accepts functions as parameters, returns a function, or both." <br>
+_callback functions_, functions that get passed as parameters <br>

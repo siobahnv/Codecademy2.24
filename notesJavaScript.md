@@ -360,3 +360,42 @@ _.findIndex() method_, return _index_ of _first_ element that evaluates to true,
 _.reduce() method_, returns a single value <br>
 
 For more built-in array methods: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Iteration_methods <br>
+
+## Objects
+_object literal_, {} <br>
+```
+let myObject = {};
+```
+Object is _unordered_ data of _key-value pairs_. <br>
+A key's value can be of any data type. <br>
+"when we have a key that does not have any special characters in it, JavaScript allows us to omit the quotation marks" <br>
+```
+let myObject = {
+  'key 0': value,
+  key: value
+};
+```
+Can use dot notation or bracket notation to access an object's property (aka key). <br>
+Bracket notation must be used when accessing keys that have numbers, spaces, or special characters. <br>
+"With bracket notation you can also use a variable inside the brackets to select the keys of an object." <br>
+```
+// Dot Notation
+object.property;
+
+// Bracket Notation
+object[property];
+
+let functionName = (objectName, propName) => objectName[propName];
+functionName(object, 'key');
+```
+Objects are _mutable_. <br>
+```
+// If the property DNE, it will be added, otherwise the value is changed to the new value.
+object.property = 'value';
+object[property] = 'value';
+```
+"we can’t reassign an object declared with const, we can still mutate it" <br>
+Can delete a property from an object with the _delete_ operator. <br>
+```
+delete object.property;
+```

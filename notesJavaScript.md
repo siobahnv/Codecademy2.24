@@ -399,3 +399,37 @@ Can delete a property from an object with the _delete_ operator. <br>
 ```
 delete object.property;
 ```
+
+"When the data stored on an object is a function we call that a _method_. A _property_ is what an object has, while a _method_ is what an object does." <br>
+"For example _console_ is a global JavaScript object and _.log()_ is a method on that object." <br>
+```
+const object = {
+  functionName: function () {
+    code;
+  }
+};
+
+// ES6
+const object = {
+  functionName () {
+    code;
+  }
+};
+
+object.method();
+```
+
+nested objects <br>
+"We can chain _operators_ to access nested properties." <br>
+_passed by reference_ <br>
+```
+let object = {
+  property: value
+};
+
+let function = obj => {
+  obj.property = newValue
+};
+
+function(object);
+```

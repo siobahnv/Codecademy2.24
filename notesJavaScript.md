@@ -447,3 +447,27 @@ for (let iterator in object.property) {
   ...
 }
 ```
+
+### Advanced Objects
+Inside the scope of an object-method, "we don’t automatically have access to other properties of the...object" <br>
+_this_ keyword, "references the _calling object_ which provides access to the calling object’s properties" <br>
+becomes more complicated "when we start using _arrow functions_ for _methods_" <br>
+"_Arrow functions_ inherently _bind_, or tie, an already defined _this_ value to the function itself that is NOT the _calling object_." <br>
+take-away: avoid using _arrow functions_ with _this_ <br>
+
+#### Resources
+https://developer.mozilla.org/en-US/docs/Glossary/Global_object <br>
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions <br>
+
+_privacy_ in objects, "we define it as the idea that only certain properties should be mutable or able to change in value" <br>
+JavaScript does not have _privacy_ built-in for objects, insteasd relies on naming _conventions_ <br>
+"One common convention is to place an underscore _ before the name of a property to mean that the property should not be altered." <br>
+```
+const object = {
+  _privateProperty: value
+}
+
+// Can still be reassigned
+object._privateProperty = newValue;
+```
+_type-coercion_ <br>

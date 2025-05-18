@@ -367,6 +367,7 @@ _object literal_, {} <br>
 let myObject = {};
 ```
 Object is _unordered_ data of _key-value pairs_. <br>
+"Each key-value pair is a property—when a property is a function it is known as a method." <br>
 A key's value can be of any data type. <br>
 "when we have a key that does not have any special characters in it, JavaScript allows us to omit the quotation marks" <br>
 ```
@@ -432,4 +433,17 @@ let function = obj => {
 };
 
 function(object);
+```
+
+looping objects <br>
+_loops_ - repeats a block of code until a condition(s) is met <br>
+_for...in_ syntax,  iterates for each property in an object <br>
+```
+let object = {
+  property: {value0, value1, value2}
+};
+
+for (let iterator in object.property) {
+  ...
+}
 ```

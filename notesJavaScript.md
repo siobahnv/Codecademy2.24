@@ -471,3 +471,16 @@ const object = {
 object._privateProperty = newValue;
 ```
 _type-coercion_ <br>
+
+"_Getters_ are methods that get and return the internal properties of an object." <br>
+_get_ keyword followed by a function <br>
+```
+get function() {
+  // code
+}
+```
+Getter/setter methods/functions cannot share the same name as the properties of the object. "One workaround is to add an underscore before the property name..." <br>
+
+_Setter_ methods "reassign values of existing properties within an object." <br>
+
+"A _factory function_ is a function that returns an object and can be reused to make multiple object instances." It can also have _parameters_. <br>

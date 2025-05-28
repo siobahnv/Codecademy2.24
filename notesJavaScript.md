@@ -484,3 +484,39 @@ Getter/setter methods/functions cannot share the same name as the properties of 
 _Setter_ methods "reassign values of existing properties within an object." <br>
 
 "A _factory function_ is a function that returns an object and can be reused to make multiple object instances." It can also have _parameters_. <br>
+```
+const factory = (param) => {
+  return {
+    // code;
+    param,
+    additionalMethod() {
+      // code
+    }
+  }
+};
+```
+
+_destructuring_ (ES6) <br>
+_property value shorthand_ <br>
+
+_destructured assignment_ <br>
+```
+const object = {
+  property0: value,
+  property1: {
+    nestedProperty: value
+  }
+};
+
+const property0 = object. property0;
+const { property0 } = object;
+// both end in same results
+console.log(property0);
+
+const { nestedProperty } = object.property1;
+console.log(nestedProperty);
+```
+
+bult-in object methods <br>
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Methods <br>
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Methods_of_the_Object_constructor <br>

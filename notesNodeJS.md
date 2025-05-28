@@ -31,4 +31,34 @@ back-end _frameworks_ <br>
 _stack_ <br>
 
 ### JavaScript concepts for Node.js
- 
+_arrow expressions_ (ES6), () => { } <br>
+```
+const helloWorld = (name) => {
+    console.log(`Hello ${name}.`)
+};
+helloWorld('JJ');
+```
+
+_synchronous code_ (blocking I/O) <br>
+_asynchronous code_ (non-blocking I/O) <br>
+_promises_, "A _Promise_ is a JavaScript object that represents the eventual outcome of an _asynchronous_ operation. A _Promise_ has three different outcomes: _pending_ (the result is undefined and the expression is waiting for a result), _fulfilled_ (the promise has been completed successfully and returned a value), and _rejected_ (the promise did not successfully complete, the result is an _error object_)." <br>
+_.catch()_ method <br>
+_async/await_, _async..await syntax_ <br>
+```
+const promiseObj = new Promise((resolve, reject) => {
+    // code
+});
+
+promiseObj.then(message => { // code }).catch(error => { // code });
+
+// async/await
+const asyncFunction = async () =>{
+    const finalResult = await promiseObj();
+}
+asyncFunction();
+```
+
+_setInterval()_ function, "executes a code block at a specified interval, in milliseconds" <br>
+_setTimeout()_ function, "xecutes a code block after a specified amount of time (in milliseconds) and is only executed once" <br>
+
+### JSON

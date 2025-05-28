@@ -517,6 +517,6 @@ const { nestedProperty } = object.property1;
 console.log(nestedProperty);
 ```
 
-bult-in object methods <br>
+built-in object methods <br>
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Methods <br>
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Methods_of_the_Object_constructor <br>

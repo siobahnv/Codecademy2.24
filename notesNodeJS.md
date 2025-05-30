@@ -64,7 +64,7 @@ _setTimeout()_ function, "xecutes a code block after a specified amount of time 
 ### JSON
 "_JSON_, or _JavaScript Object Notation_, is a popular, language-independent, standard format for storing and exchanging data." <br>
 "Trailing commas are forbidden." <br>
-"JSON property names must be in double-quoted <font color="#800080">(" ")</font> text even though JavaScript names do not hold by this stringency." <br>
+"JSON property names must be in double-quoted <span style="color:#800080;">(" ")</span> text even though JavaScript names do not hold by this stringency." <br>
 Doesn't cover every data type, such as dates/times: https://www.iso.org/iso-8601-date-and-time-format.html <br>
 
 ### Intro

@@ -62,3 +62,28 @@ _setInterval()_ function, "executes a code block at a specified interval, in mil
 _setTimeout()_ function, "xecutes a code block after a specified amount of time (in milliseconds) and is only executed once" <br>
 
 ### JSON
+"_JSON_, or _JavaScript Object Notation_, is a popular, language-independent, standard format for storing and exchanging data." <br>
+"Trailing commas are forbidden." <br>
+"JSON property names must be in double-quoted <font color="purple">(" ")</font> text even though JavaScript names do not hold by this stringency." <br>
+Doesn't cover every data type, such as dates/times: https://www.iso.org/iso-8601-date-and-time-format.html <br>
+
+### Intro
+"_Node.js_ is a JavaScript _runtime_, or an environment that allows us to execute JavaScript code outside of the browser." <br> 
+"A “runtime” converts code written in a _high-level_, human-readable, programming language and compiles it down to code the computer can execute." <br>
+
+#### Resources
+https://developer.mozilla.org/en-US/docs/Web/JavaScript <br>
+https://nodejs.org/api/ <br>
+
+"_REPL_ is an abbreviation for read–eval–print loop." <br>
+"When you install _Node_, it comes with a built-in JavaScript _REPL_. You can access the _REPL_ by typing the command _node_ (with nothing after it) into the terminal and hitting _enter_." <br>
+.editor, "editor" mode, control + d to _enter_<br>
+"Each session of the REPL has a _single shared memory_; you can access any variables or functions you define until you exit the REPL." <br>
+_Node global object_ <br>
+
+.js extension <br>
+_modularity_ <br>
+_modules_ <br>
+_require()_ function <br>
+_core modules_, examples: events, util, console, process, os <br>
+lib/ folder <br>

@@ -87,3 +87,23 @@ _modules_ <br>
 _require()_ function <br>
 _core modules_, examples: events, util, console, process, os <br>
 lib/ folder <br>
+
+"Since _console_ is a _global module_, its methods can be accessed from anywhere, and the _require()_ function is not necessary." <br>
+
+"a _process_ is the instance of a computer program that is being executed" <br>
+_process_ is a global module <br>
+process.env <br>
+NODE_ENV, production, development <br>
+process.memoryUsage() <br>
+process.memoryUsage().heapUsed <br>
+process.argv <br>
+https://nodejs.org/api/process.html <br>
+
+os module is not global <br>
+```
+const os = require('os');
+```
+
+utility functions <br>
+util module <br>
+util.promisify() <br>

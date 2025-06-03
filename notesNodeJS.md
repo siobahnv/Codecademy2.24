@@ -107,3 +107,58 @@ const os = require('os');
 utility functions <br>
 util module <br>
 util.promisify() <br>
+
+### Setting Up Node Locally
+https://www.codecademy.com/article/command-line-setup <br>
+https://nodejs.org/en/ <br>
+Node "LTS", Long Term Support <br>
+```
+which node
+node -v
+```
+
+### Getting Started with Node Package Manager
+Node Package Manager (NPM) <br>
+_dependencies_, third-party modules <br>
+_package_, "a third-party module wrapped up with the list of that module’s own dependencies" <br>
+_package manager_, downloads & installs, checks for vulneriblities & updates, handles sub-dependencies, and removes unneeded files; "Provides a repeatable and consistent process of installing dependencies" <br>
+_npm_, command-line tool <br>
+
+```
+// Follow the prompts & a package.json file will be generated
+npm init
+
+// To skip the prompts
+npm init -y
+```
+https://www.npmjs.com/ <br>
+_nodemon_ package <br>
+```
+// i is actually an alias for install, and either npm i or npm install can be used
+npm i nodemon
+```
+"The _npm i <package name>_ command installs a package _locally_ in a folder called **node_modules/** which is created in the project directory that you ran the command from. In addition, the newly installed package will be added to the _package.json file_" <br>
+development dependencies <br>
+```
+// To install nodemon as a development dependency, we can add the flag --save-dev, or its -D alias.
+npm install nodemon --save-dev
+```
+"_Development dependencies_ are listed in the "devDependencies" field of the package.json file." <br>
+"Like local packages, _development dependencies_ are also stored in the local **node_modules/** folder." <br>
+
+installed _globally_, available system-wide <br>
+ex. http-server package <br>
+```
+npm install http-server -g
+```
+"packages installed _globally_ will not be listed in a projects **package.json** file and they will be stored in a separate global **node_modules/** folder." <br>
+
+```
+// automatically install all packages listed as dependencies or development dependencies
+npm i
+
+// leave out development dependencies
+npm i --production
+```
+"Because of this convenient command, it is recommended that you do not include your local **node_modules/** folder in any repository that you use to store and share your code to avoid taking up precious storage resources." <br>
+

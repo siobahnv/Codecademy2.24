@@ -211,3 +211,7 @@ fs core module, "was modeled after the _POSIX_ standard for interacting with the
 _stream_ <br>
 _readline_ core module <br>
 .createInterface() <br>
+.createWriteStream() <br>
+
+_timer_ module, global <br>
+Node.js event loop <br>

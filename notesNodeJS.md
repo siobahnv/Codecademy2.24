@@ -162,3 +162,52 @@ npm i --production
 ```
 "Because of this convenient command, it is recommended that you do not include your local **node_modules/** folder in any repository that you use to store and share your code to avoid taking up precious storage resources." <br>
 
+### Implementing Modules in Node
+"module" and "file" are often used interchangably <br>
+separation of concerns <br>
+Node runtime envirnoment with built-in functions: module.exports and require() <br>
+browser-based runtime environment, ES6 import/export syntax <br>
+
+#### Resources
+https://www.codecademy.com/article/implementing-modules-using-es-6-syntax <br>
+https://www.codecademy.com/article/introduction-to-javascript-runtime-environments <br>
+
+exports, named functions vs anonymous functions <br>
+Can use object destructuring to extract only needed functions from modules instead of everything <br>
+```
+const { function } = require('./module.js');
+```
+
+### Node Modules
+https://nodejs.org/docs/latest-v14.x/api/modules.html <br>
+
+### Node.js Essentials
+core Node.js modules: events, error, buffer, fs, and timer <br>
+event-driven architecture <br>
+.on() method <br>
+_listener_ callback function <br>
+.emit() method <br>
+
+input/output <br>
+"thin wrapper" <br>
+console.log(), .stdout.write() of process object <br>
+stdout = standard output <br>
+stdin.on(), instance of EventEmitter of process module <br>
+
+error module: EvalError, SyntaxError, RangeError, ReferenceError, TypeError, and URIError <br>
+error module is within the global scope <br>
+_error-first callback functions_ <br>
+
+Buffer module is within the global scope as well <br>
+"A Buffer object represents a fixed amount of memory that can’t be resized. Buffer objects are similar to an array of integers where each element in the array represents a byte of data. The buffer object will have a range of integers from 0 to 255 inclusive." <br>
+Buffer methods include: .alloc(), .toString(), .from(), and .concat() <br>
+
+filesystem <br>
+sandboxing <br>
+fs core module, "was modeled after the _POSIX_ standard for interacting with the filesystem" <br>
+"Each method available through the fs module has a synchronous version and an asynchronous version." <br>
+.readFile() method <br>
+
+_stream_ <br>
+_readline_ core module <br>
+.createInterface() <br>

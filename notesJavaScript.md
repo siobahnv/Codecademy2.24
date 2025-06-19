@@ -76,6 +76,7 @@ _string concatenation_ + <br>
 string interpolation and _template literals_ <br>
 ```
 const myVar = 'example';
+// Important: use ` and not '
 console.log(`Interpolating in a string literal ${myVar}.`);
 // Output: Interpolating in a string literal example.
 ```

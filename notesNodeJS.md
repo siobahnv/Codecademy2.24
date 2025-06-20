@@ -221,4 +221,4 @@ HTTP, Hypertext Transfer Protocol, is a request-response protocol... <br>
 "HTTP helps facilitate the exchange of information between a _client_ (i.e. website, mobile app, etc.) and a _server_." <br>
 https://www.codecademy.com/article/use-devtools <br>
 
-![Screenshot of structures for a Request and Response.](/../assets/screenshotHTTP structures.jpg)
+![Screenshot of structures for a Request and Response.](/assets/screenshotHTTP structures.jpg)

@@ -221,4 +221,33 @@ HTTP, Hypertext Transfer Protocol, is a request-response protocol... <br>
 "HTTP helps facilitate the exchange of information between a _client_ (i.e. website, mobile app, etc.) and a _server_." <br>
 https://www.codecademy.com/article/use-devtools <br>
 
-![Screenshot of structures for a Request and Response.](/assets/screenshotHTTP structures.jpg)
+![Screenshot of structures for a Request and Response.](/assets/screenshotHTTPstructures.jpg)
+
+transport and encryption protocols <br>
+TCP, Transmission Control Protocol <br>
+UDP, User Datagram Protocol <br>
+TLS, Transport Layer Security <br>
+SSL, Secure Sockets Layer (deprecated) <br>
+HTTPS, Hypertext Transfer Protocol Secure <br>
+HTTP/1.1, HTTP/2, HTTP/3 <br>
+QUIC <br>
+
+http module <br>
+.createServer() <br>
+
+API, Application Programming Interface <br>
+URL, Uniform Resource Locator <br>
+![Screenshot of URL breakdown.](/assets/screenshotURL.jpg)
+
+url module <br>
+URL class <br>
+URLSearchParams class <br>
+WHATWG URL specification, https://url.spec.whatwg.org/ <br>
+
+querystring module (legacy module)<br>
+.parse() <br>
+.decode() <br>
+.stringify() <br>
+.encode() <br>
+.escape() <br>
+.unescape() <br>

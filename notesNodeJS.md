@@ -251,3 +251,132 @@ querystring module (legacy module)<br>
 .encode() <br>
 .escape() <br>
 .unescape() <br>
+
+routing <br>
+
+https://www.codecademy.com/learn/learn-node-js/modules/setting-up-a-server-with-http/cheatsheet <br>
+...getting a bit lost here, should review this part more... <br>
+```
+const http = require('http');
+
+const handleGetRequest = (req, res) => {
+  // Set GET status code here
+  res.statusCode = 200;
+  return res.end(JSON.stringify({ data: [] }));
+}
+
+const handlePostRequest = (req, res) => {
+  // Set POST status code here
+  res.statusCode = 500;
+  return res.end("Unable to create record");
+}
+
+// Creates server instance
+const server = http.createServer((req, res) => {
+  const { method } = req;
+ 
+  switch(method) {
+    case 'GET':
+      return handleGetRequest(req, res);
+    case 'POST':
+      return handlePostRequest(req, res);
+    default:
+      throw new Error(`Unsupported request method: ${method}`);
+  }
+});
+
+// Starts server listening on specified port
+server.listen(4001, () => {
+  const { address, port } = server.address();
+  console.log(`Server is listening on: http://${address}:${port}`);
+});
+```
+
+HTTP response status code <br>
+> "Response status codes are grouped into five classes:
+> Informational: Range from 100 to 199.
+> Successful: Range from 200 to 299.
+> Redirects: Range from 300 to 399.
+> Client Errors: Range from 400 to 499.
+> Server Errors: Range from 500 to 599."
+
+databases <br>
+Software Development Kits (SDKs) <br>
+Object-Relational Mapping (ORMs) <br>
+external services/APIs <br>
+request() method; http.request({options}, callback => {}) <br>
+get() method; convenience method <br>
+microservice architectures <br>
+
+Complete server example (reference/review): <br>
+```
+const http = require('http');
+
+// Handle GET Request
+const handleGetRequest = (req, res) => {
+  const options = {
+    hostname: 'static-assets.codecademy.com',
+    path: '/Courses/Learn-Node/http/data.json',
+    method: 'GET'
+  }
+
+  const request = http.request(options, (response) => {
+    let data = '';
+
+    response.on('data', (chunk) => {
+      data += chunk;
+    });
+
+    response.on('end', (chunk) => {
+      res.end(data);
+    });
+  });
+
+  request.end()
+}
+
+// Creates server instance
+const server = http.createServer((req, res) => {
+  const { method } = req;
+ 
+  switch(method) {
+    case 'GET':
+      return handleGetRequest(req, res);
+    default:
+      throw new Error(`Unsupported request method: ${method}`);
+  }
+});
+
+// Starts server listening on specified port
+server.listen(4001, () => {
+  const { address, port } = server.address();
+  console.log(`Server is listening on: http://${address}:${port}`);
+});
+```
+
+### REST
+REST (REpresentational State Transfer) paradigm <br>
+RESTful systems <br>
+stateless <br>
+resources vs commands <br>
+4 basic HTTP verbs: GET, POST, PUT, DELETE <br>
+https://www.codecademy.com/article/what-is-crud <br>
+MIME Types (or Multipurpose Internet Mail Extensions), MDN Web Docs: https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/MIME_types <br>
+type/subtype: text/html, text/css, text/plain <br>
+> Other types and commonly used subtypes:
+> image — image/png, image/jpeg, image/gif
+> audio — audio/wav, audio/mpeg
+> video — video/mp4, video/ogg
+> application — application/json, application/pdf, application/xml, application/octet-stream
+
+paths <br>
+"Conventionally, the first part of the path should be the plural form of the resource." <br>
+
+responses <br>
+_content-type_ header <br>
+response codes <br>
+
+### Next Steps
+Express.js https://www.codecademy.com/learn/learn-express <br>
+Node-SQLite https://www.codecademy.com/learn/learn-node-sqlite <br>
+Contribute to Codecademy Docs https://www.codecademy.com/resources/docs/contribution-guide <br>

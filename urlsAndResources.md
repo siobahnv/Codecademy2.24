@@ -16,3 +16,5 @@ https://www.codecademy.com/learn/learn-how-to-code
 https://www.codecademy.com/learn/user-authentication-authorization-express
 https://www.codecademy.com/learn/learn-javascript-classes-and-modules
 https://www.codecademy.com/learn/learn-intermediate-javascript
+
+https://www.codecademy.com/learn/introduction-to-cybersecurity

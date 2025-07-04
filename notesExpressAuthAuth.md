@@ -8,7 +8,7 @@ encrytion <br>
 _penetration testing_, or pen testing, or ethical hacking <br>
 CIA triad, Confidentiality, Integrity, and Availability <br>
 
-OWASP Top Ten <br>
+### OWASP Top Ten
 1. _injection_ <br>
 sanitizing and validation <br>
 
@@ -41,3 +41,43 @@ Common Vulnerabilites and Exposures systems, https://cve.mitre.org/ (redirects..
 "Usually, this can be prevented by keeping software...up to date." <br>
 
 10. "_Insufficient Logging and Monitoring_ refers to an overall lack of tools that monitor, record, and report events within a system." <br>
+
+### Authentication vs Authorization vs Encryption
+"Authentication is the verification of _who you are_." <br>
+Three Factors: Knowledge, Possession, Inherence <br>
+_Single-Factor Authentication_, relies on a single factor, vs _Multi-Factor Authentication_ <br>
+_Multi-Factor Authentication_ vs _Multi-Step Authentication_ <br>
+
+"Authorization is the verification of _what you are allowed to do_." <br>
+
+"Encryption is the process of transforming data into a format that is unreadable unless you have the correct _key_ to decrypt it." <br>
+Two main types: Symmetrical vs Asymmetrical Data Encryption <br>
+"Symmetric encryption uses the same key to encrypt and decrypt data." <br>
+"Asymmetric encryption uses separate keys for encryption and decryption." <br>
+
+#### Evolution of Authentication
+Been around a long time, such as passphrases (*knock knock* Who goes there?); from passwords and printed IDs to complex systems. <br>
+
+#### Basic Authentication 
+Pattern: challenges and responses <br>
+Catergories: knowledge-based, possesion-based, inherence-based <br>
+Knowledge: something you know <br>
+Possesion: something you have <br>
+Inherence: something you are <br>
+
+#### Usernames and Passwords
+Early systems password-based in plain text. <br>
+Current systems are more complex and the current standard for password storage is to use salted hashes. <br>
+Cryptography <br>
+
+#### One-Time Passwords & MFA
+The One-Time Password, or OTP, possession-based <br>
+
+#### PKI: Authenticating the Authenticator
+Public-Key Infrastructure, or PKI, is a system that designates trusted authorities; verification <br>
+
+#### Single Sign-On & OAuth2
+Single Sign-On, also known as SSO, can auttenticate with one service and use to authenticate to other services <br>
+The current standard for SSO is OAuth 2.0. <br>
+
+### Session Authentication in Express

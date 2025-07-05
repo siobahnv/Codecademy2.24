@@ -81,3 +81,25 @@ Single Sign-On, also known as SSO, can auttenticate with one service and use to 
 The current standard for SSO is OAuth 2.0. <br>
 
 ### Session Authentication in Express
+"HTTP(S) protocol on its own is stateless" <br>
+"A web _session_ refers to a series of user interactions over a time frame." <br> 
+"Session data is stored server-side and associated with a session ID." <br>
+Similar to short-term memory. <br>
+
+"_Cookies_ are tiny pieces of data — text files of max 4kb — the browser stores that are automatically sent with HTTP requests to a web application." <br> 
+"Cookies are set by the HTTP response header in key-value pairs" <br>
+"A session cookie is set with the first HTTP response from the server and persists until the browser is closed or the cookie expires." <br>
+```
+Set-Cookie: Key=Value
+
+// Example
+Set-Cookie: sessionID=34jgL79b
+```
+
+Securing cookies <br>
+Set a duration or timeout <br>
+"The _HttpOnly_ attribute for the _Set-Cookie_ header makes sure that the cookie’s data is not accessible to a script running client-side. This helps prevent a _Cross-Site Scripting (XSS)_ attack..." <br>
+Other options: <br>
+* [SameSite] (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite) helps prevent Cross-Site Request Forgery (CSRF) attacks.
+* [Secure] (https://owasp.org/www-community/controls/SecureCookieAttribute) makes sure cookies are only sent with a request to an HTTPS page.
+* https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie

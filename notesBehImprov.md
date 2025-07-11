@@ -83,3 +83,5 @@ Respecting the needs of your audience: who, what, listen <br>
 Different channels to communicate: informal, semi-formal, formal <br>
 Communication styles => Effectiiveness: Social, Analytical, Functional, Intuitive <br>
 Strategies to handle difficult conversations: neutral, listen, negotiate <br>
+
+## Course: Effective Team Communication
